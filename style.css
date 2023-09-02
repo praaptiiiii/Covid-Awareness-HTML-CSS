@@ -1,0 +1,431 @@
+
+/* Navbar start */
+
+nav {
+  list-style-type: none;
+  margin: 1px solid black;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  font-size: 18px;
+  position: sticky;
+}
+
+nav li {
+  float: left;
+  margin-right: 20px;
+}
+
+nav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 0;
+  letter-spacing: 0.7px;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 7%;
+}
+
+nav li a:hover {
+  background-color: white;
+  font-weight: bold;
+  text-decoration: underline;
+  color: crimson;
+  font-weight: bolder;
+}
+
+.navbar-brand {
+  color: #263159;
+  background-color: white;
+  padding: 7px;
+  margin-left: 10px;
+  font-weight: bolder;
+  font-size: 25px;
+  border-radius: 7%;
+}
+
+/* Navbar end */
+
+
+/* poster div */
+
+.image1 img{
+  transition: transform .8s ease-in-out;
+  margin: auto;
+  width: 75%;
+  margin: 3% 12.5% 5% 12.5%;
+  padding-top: 0;
+
+}
+
+.image1 img:hover {
+  transform: scale(1.1);
+}
+
+.poster{
+  padding-top: 50px;
+}
+
+
+h1{
+  text-align: center;
+  color: crimson;
+  animation:
+  3s linear slidein,
+  3s ease-out 5s slideout;
+  word-spacing: 25%;
+  padding-top: 3.5%;
+}
+
+@media (max-width: 768px) {
+  h1{
+    padding-top: 0;
+  }
+
+  .image1 img{
+    width: 90%;
+    padding-left: 0;
+    margin-left: 5%;
+  }
+}
+
+/* div 2: symptoms */
+
+
+
+.one-container{
+  padding: 5%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.one-container img{
+  height: 100%;
+  margin-left: 15%;
+}
+
+.symptoms>h2, .spread>h2, .precautions>h2, .links>h2{
+  background-color: crimson;
+  color: white;
+  padding-left: 37.5%;
+}
+
+.symptoms h4{
+  background-color: #78C1F3;
+  color: black;
+  padding-left:15%;
+  padding-top: 20%;
+  height: 100%;
+}
+
+@media (max-width:768px) {
+  .one-container{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .one-container img{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .symptoms h4{
+    background-color: #78C1F3;
+    color: black;
+    padding-left:7%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+    margin-top: 3%;
+  }
+
+  .symptoms>h2{
+    padding-left: 20%;
+  }
+  
+ }
+
+
+/* div three: how it spreads */
+
+.two-container{
+  padding: 5%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.spread img{
+  height: 100%;
+  padding-left: 25%;
+}
+
+.spread h4{
+  background-color: #FFE5AD;
+  color: black;
+  padding-left:7%;
+  padding-top: 7%;
+  height: 100%;
+}
+
+.spread>h2{
+  padding-left: 40%;
+}
+
+
+@media (max-width:768px){
+  .two-container{
+    padding: 5%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .spread img{
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 5%;
+  }
+
+  .spread h2{
+    padding-left: 25%;
+  }
+}
+
+
+/* div four: precautions */
+.three-container{
+  padding: 5%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.precautions img{
+  height: 100%;
+  padding-left: 5%;
+}
+
+.precautions h4{
+  background-color: #CCEEBC;
+  color: black;
+  padding-left:7%;
+  padding-right: 2%;
+  padding-top: 7%;
+  height: 100%;
+}
+
+.precautions>h2{
+  padding-left: 45%;
+}
+
+#scroll-container {
+  overflow: hidden;
+}
+
+#scroll-text {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 10s linear infinite;
+  -webkit-animation: my-animation 10s linear infinite;
+  animation: my-animation 10s linear infinite;
+  
+}
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width:768px){
+  .three-container{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .precautions img{
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 5%;
+  }
+  .precautions>h2{
+    padding-left: 35%;
+  }
+}
+
+/* div five: imp info*/
+
+.imp-info-area {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.four-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5%;
+  padding-bottom: 5%;
+}
+
+.four-container .block {
+  width: 90%;
+  transition: transform 1s ease-in-out;
+  margin-top: 5%;
+  height: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.important-heading {
+  width: 100%;
+  margin-bottom: 25px;
+  color: white;
+  background-color: crimson;
+  text-align: center;
+}
+
+.icon {
+  text-align: center;
+  -webkit-text-stroke: 2px #fff;
+}
+
+.text-area {
+  color: white;
+  text-align: center;
+}
+
+.text-area p {
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.text-area a, .text-area a:hover {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.text-area h2 {
+  color: black;
+  font-size: 1.4em;
+  margin-top: 15px;
+}
+
+.one-container, .three-container, .two-container, .four-container, .five-container, .links{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+@media (max-width:768px){
+  .imp-info-area>h2{
+    padding-left: 3.5%;
+  }
+}
+
+
+.links>h2{
+  padding-left: 45%;
+}
+
+
+
+/* div six */
+
+.five-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.five-container img{
+  height: 40%;
+}
+
+
+
+/* div seven: social */
+
+.social-hub {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-bottom: 5%;
+}
+
+.social-hub .a,.p,h3{
+  color: white;
+  padding-bottom: 5%;
+}
+
+.social-hub .icon img {
+  width: 10rem;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.social-hub .whatsapp {
+  background-color: #209c2e;
+}
+
+.social-hub .telegram {
+  background-color: #5599d0;
+}
+
+.social-hub .messenger {
+  background-color: #1b7acd;
+}
+
+.social-hub .facebook {
+  background-color: #2e4780;
+}
+
+.carousel-item{
+  width:40%;
+  margin-left: 30%;
+}
+.social-hub .block{
+  padding-bottom: 5%;
+}
+
+@media (max-width:768px){
+  .links>h2{
+    padding-left: 35%;
+  }
+}
+
+/* footer */
+ footer p{
+  color: white;
+ }
+
+ footer{
+  background-color: crimson;
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+ }
+
